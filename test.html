@@ -40,7 +40,14 @@
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="x7rzKSdG"></script>
-
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  
 <script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>
 
 <nav class="navbar navbar-light bg-white fixed-top bottom-border" style="padding: 5px 0px;">
@@ -81,6 +88,8 @@
 </div>
 </div>
 </main>
+
+<div class="fb-quote"></div>
 
 <footer class="text-muted bg-light" style="padding-bottom: 5px;">
   <div class="container">
