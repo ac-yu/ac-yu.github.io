@@ -39,8 +39,8 @@
 <body>
 
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="x7rzKSdG"></script>
-  
+
+
 
 <nav class="navbar navbar-light bg-white fixed-top bottom-border" style="padding: 5px 0px;">
 	<a href='../literature.html' class="navbar-brand">
@@ -68,13 +68,12 @@
 <h3>Subtitle</h3>
 <p>testing123</p>
 
-<div style="text-align: right;">
+<div class="social" style="text-align: right;">
+
 <div class="fb-like" style="margin-right: -10px;" data-href="https://ac-yu.github.io/test.html" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 
-<br/><a class="tumblr-share-button" data-color="blue" data-notes="right" data-posttype="text" href="https://embed.tumblr.com/share" data-title="test page" data-content="<h1>Title</h1>
-<p>Testing.</p>
-<h3>Subtitle</h3>
-<p>testing123</p>"></a>
+
+
 </div>
 
 </div>
@@ -93,6 +92,30 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 <script src="assets/1.0/site.js"></script>
-<script async src="https://cse.google.com/cse.js?cx=000697064956386539004:7tmutmwt6uy"></script>
+
+<script>
+$(window).on('load', function(){
+// Facebook buttons
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+	js.async=true;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+});
+
+// Tumblr button
+!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.async=true;js.src="https://assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");
+
+/*
+$(".social").append('<br/><a class="tumblr-share-button" data-color="blue" data-notes="right" data-posttype="text" href="https://embed.tumblr.com/share" data-title="test page" data-content="<h1>Title</h1> \
+<p>Testing.</p> \
+<h3>Subtitle</h3> \
+<p>testing123</p>"></a>');
+*/
+</script>
+
 </body>
 </html>
